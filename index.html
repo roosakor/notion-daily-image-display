@@ -7,236 +7,258 @@
   <meta name="Generator" content="Cocoa HTML Writer">
   <meta name="CocoaVersion" content="2299.7">
   <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; -webkit-text-stroke: #000000}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; -webkit-text-stroke: #000000; min-height: 14.0px}
+    span.s1 {font-kerning: none}
   </style>
 </head>
 <body>
-<p class="p1">&lt;!DOCTYPE html&gt;</p>
-<p class="p1">&lt;html lang="en"&gt;</p>
-<p class="p1">&lt;head&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;Daily Image Display&lt;/title&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>body {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin: 0;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>overflow: hidden;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>img {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>width: 100%;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>height: 100%;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>object-fit: cover;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
-<p class="p1">&lt;/head&gt;</p>
-<p class="p1">&lt;body&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;script&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>const images = [</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'All Habits Return to This.png',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'Community Engagement Tips.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'Habits Change Your Brain.png',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'Habits Help You Become Yourself.png',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'Habits and Values.png',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_0121.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_0124.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_0130.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_0133.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_0134.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_0136.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_0137.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_0141.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_0142.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_0271.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_0272.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_0273.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_0274.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_0275.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_0276.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_0277.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_0278.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_0279.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_0280.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_0281.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_0282.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_0283.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_0284.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_0285.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_0286.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_0287.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_0288.PNG',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_0289.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_0290.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_0291.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_0292.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_0293.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_0294.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_0295.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_0296.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_0297.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_0298.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_0299.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_0300.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_0301.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_0302.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_0303.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_0304.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_0305.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_0306.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_0307.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_0308.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_0309.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_0310.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_0311.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_0312.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_0313.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_0314.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_0315.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_0316.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_0317.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_0318.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_0319.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_0320.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_0321.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_0322.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_0323.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_0324.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_0325.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_0326.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_0327.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_0328.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_0329.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_0330.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_0331.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_0332.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_0333.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_0334.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_0335.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_0336.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_0337.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_0338.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_0339.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_0340.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_0341.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_0342.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_0343.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_0344.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_0345.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_0346.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_0347.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_0348.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_0349.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_0350.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_0351.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_0352.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_0353.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_0354.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_0355.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_0356.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_0357.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_0358.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_0359.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_0360.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_0361.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_0362.PNG',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_0363.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_0364.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_0365.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_0385.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_2549.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_3015.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_3368.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_5179.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_5366.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_5367.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_5369.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_5371.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_5372.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_5373.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_5374.PNG',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_5375.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_5376.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_5377.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_5378.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_5379.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_5380.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_5381.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_5441 copy.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_6060.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_6084.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'IMG_8467.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'Know Your Worth - Kanye Quote.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'Make the Beginning of Your Life Incredibly Difficult.png',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'Net Worth by Age.png',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'Passive Learning over One Action.png',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'Quantity over Quality.png',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'Realistic Net Worth.png',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'Relationships Compound.png',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'Screenshot 2021-09-21 at 11.49.02 PM.png',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'Screenshot 2021-11-10 at 6.00.01 PM.png',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'Screenshot 2021-11-10 at 6.05.08 PM.png',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'Screenshot 2021-11-10 at 6.21.56 PM.png',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'Screenshot 2021-11-13 at 11.55.31 PM.png',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'Screenshot 2021-11-20 at 11.33.44 PM.png',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'Screenshot 2021-11-20 at 11.38.23 PM.png',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'Screenshot 2021-11-20 at 11.38.35 PM.png',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'Screenshot 2021-11-20 at 4.29.07 PM.png',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'Screenshot 2021-11-21 at 10.12.53 AM.png',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'Screenshot 2021-11-21 at 10.17.16 AM.png',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'Screenshot 2021-11-21 at 10.17.46 AM.png',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'Screenshot 2021-11-21 at 10.18.35 AM.png',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'Screenshot 2021-11-21 at 10.18.56 AM.png',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'Screenshot 2021-11-21 at 11.34.50 PM.png',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'Screenshot 2021-11-21 at 11.39.29 PM.png',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'Screenshot 2021-11-21 at 9.41.49 AM.png',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'Screenshot 2021-11-21 at 9.50.26 AM.png',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'Screenshot 2021-11-23 at 1.51.49 AM.png',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'Screenshot 2021-11-25 at 1.37.24 AM.png',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'Screenshot 2021-11-26 at 11.31.50 PM.png',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'Screenshot 2021-11-28 at 11.47.50 AM.png',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'Screenshot 2021-12-10 at 3.14.29 PM.png',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'Screenshot 2021-12-10 at 3.43.26 PM.png',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'Screenshot 2021-12-10 at 3.48.25 PM.png',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'Screenshot 2021-12-10 at 3.54.09 PM.png',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'Screenshot 2021-12-10 at 3.54.18 PM.png',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'Screenshot 2021-12-10 at 3.55.37 PM.png',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'Screenshot 2021-12-10 at 4.18.14 PM.png',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'Screenshot 2021-12-10 at 4.18.21 PM.png',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'Screenshot 2021-12-16 at 1.53.02 PM.png',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'Screenshot 2021-12-16 at 12.54.57 PM.png',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'Screenshot 2022-12-22 at 12.46.07 PM.png',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'Screenshot 2022-12-22 at 12.49.57 PM.png',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'Screenshot 2022-12-22 at 12.50.40 PM.png',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'Screenshot 2023-06-23 at 11.52.52 PM.png',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'Screenshot 2023-12-29 at 10.06.57 PM.png',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'Screenshot 2023-12-29 at 10.11.36 PM.png',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'Screenshot 2023-12-29 at 10.14.37 PM.png',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'Screenshot 2023-12-29 at 9.54.22 PM.png',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'Screenshot 2023-12-29 at 9.54.28 PM.png',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'Screenshot 2023-12-29 at 9.54.37 PM.png',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'Screenshot 2023-12-29 at 9.56.20 PM.png',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'Screenshot 2023-12-29 at 9.56.27 PM.png',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'Screenshot 2023-12-29 at 9.57.09 PM.png',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'Screenshot 2023-12-29 at 9.57.19 PM.png',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'Screenshot 2023-12-29 at 9.59.31 PM.png',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'Showing Up Daily Graph.JPG',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'Solitude.png',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'Strategise, Don't Complain.png',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'Success is doing something obvious for a long time.png',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'You Get What You Repeat.png',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'cantino.eth community inspo.jpg',</p>
-<p class="p1"><span class="Apple-converted-space">    </span>'cantino.eth inspo 2.jpg',</p>
-<p class="p1">];</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>const randomIndex = Math.floor(Math.random() * images.length);</p>
-<p class="p1"><span class="Apple-converted-space">    </span>const imageUrl = images[randomIndex];</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>// Set the background image of the body</p>
-<p class="p1"><span class="Apple-converted-space">    </span>document.body.style.backgroundImage = `url('${imageUrl}')`;</p>
-<p class="p1">&lt;/script&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;/body&gt;</p>
-<p class="p1">&lt;/html&gt;</p>
+<p class="p1"><span class="s1">&lt;!DOCTYPE html&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;html lang="en"&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;head&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;title&gt;Daily Image Display&lt;/title&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;style&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>body {</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>margin: 0;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>overflow: hidden;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>img {</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>width: 100%;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>height: 100%;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>object-fit: cover;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;/head&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;body&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;script&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>document.addEventListener("DOMContentLoaded", function() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const images = [</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'All Habits Return to This.png',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'Community Engagement Tips.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'Habits Change Your Brain.png',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'Habits Help You Become Yourself.png',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'Habits and Values.png',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_0121.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_0124.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_0130.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_0133.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_0134.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_0136.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_0137.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_0141.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_0142.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_0271.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_0272.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_0273.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_0274.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_0275.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_0276.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_0277.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_0278.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_0279.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_0280.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_0281.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_0282.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_0283.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_0284.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_0285.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_0286.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_0287.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_0288.PNG',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_0289.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_0290.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_0291.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_0292.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_0293.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_0294.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_0295.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_0296.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_0297.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_0298.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_0299.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_0300.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_0301.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_0302.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_0303.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_0304.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_0305.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_0306.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_0307.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_0308.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_0309.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_0310.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_0311.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_0312.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_0313.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_0314.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_0315.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_0316.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_0317.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_0318.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_0319.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_0320.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_0321.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_0322.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_0323.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_0324.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_0325.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_0326.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_0327.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_0328.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_0329.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_0330.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_0331.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_0332.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_0333.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_0334.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_0335.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_0336.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_0337.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_0338.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_0339.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_0340.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_0341.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_0342.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_0343.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_0344.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_0345.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_0346.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_0347.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_0348.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_0349.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_0350.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_0351.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_0352.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_0353.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_0354.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_0355.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_0356.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_0357.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_0358.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_0359.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_0360.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_0361.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_0362.PNG',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_0363.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_0364.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_0365.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_0385.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_2549.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_3015.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_3368.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_5179.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_5366.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_5367.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_5369.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_5371.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_5372.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_5373.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_5374.PNG',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_5375.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_5376.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_5377.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_5378.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_5379.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_5380.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_5381.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_5441 copy.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_6060.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_6084.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'IMG_8467.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'Know Your Worth - Kanye Quote.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'Make the Beginning of Your Life Incredibly Difficult.png',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'Net Worth by Age.png',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'Passive Learning over One Action.png',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'Quantity over Quality.png',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'Realistic Net Worth.png',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'Relationships Compound.png',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'Screenshot 2021-09-21 at 11.49.02 PM.png',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'Screenshot 2021-11-10 at 6.00.01 PM.png',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'Screenshot 2021-11-10 at 6.05.08 PM.png',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'Screenshot 2021-11-10 at 6.21.56 PM.png',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'Screenshot 2021-11-13 at 11.55.31 PM.png',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'Screenshot 2021-11-20 at 11.33.44 PM.png',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'Screenshot 2021-11-20 at 11.38.23 PM.png',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'Screenshot 2021-11-20 at 11.38.35 PM.png',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'Screenshot 2021-11-20 at 4.29.07 PM.png',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'Screenshot 2021-11-21 at 10.12.53 AM.png',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'Screenshot 2021-11-21 at 10.17.16 AM.png',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'Screenshot 2021-11-21 at 10.17.46 AM.png',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'Screenshot 2021-11-21 at 10.18.35 AM.png',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'Screenshot 2021-11-21 at 10.18.56 AM.png',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'Screenshot 2021-11-21 at 11.34.50 PM.png',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'Screenshot 2021-11-21 at 11.39.29 PM.png',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'Screenshot 2021-11-21 at 9.41.49 AM.png',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'Screenshot 2021-11-21 at 9.50.26 AM.png',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'Screenshot 2021-11-23 at 1.51.49 AM.png',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'Screenshot 2021-11-25 at 1.37.24 AM.png',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'Screenshot 2021-11-26 at 11.31.50 PM.png',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'Screenshot 2021-11-28 at 11.47.50 AM.png',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'Screenshot 2021-12-10 at 3.14.29 PM.png',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'Screenshot 2021-12-10 at 3.43.26 PM.png',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'Screenshot 2021-12-10 at 3.48.25 PM.png',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'Screenshot 2021-12-10 at 3.54.09 PM.png',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'Screenshot 2021-12-10 at 3.54.18 PM.png',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'Screenshot 2021-12-10 at 3.55.37 PM.png',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'Screenshot 2021-12-10 at 4.18.14 PM.png',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'Screenshot 2021-12-10 at 4.18.21 PM.png',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'Screenshot 2021-12-16 at 1.53.02 PM.png',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'Screenshot 2021-12-16 at 12.54.57 PM.png',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'Screenshot 2022-12-22 at 12.46.07 PM.png',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'Screenshot 2022-12-22 at 12.49.57 PM.png',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'Screenshot 2022-12-22 at 12.50.40 PM.png',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'Screenshot 2023-06-23 at 11.52.52 PM.png',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'Screenshot 2023-12-29 at 10.06.57 PM.png',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'Screenshot 2023-12-29 at 10.11.36 PM.png',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'Screenshot 2023-12-29 at 10.14.37 PM.png',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'Screenshot 2023-12-29 at 9.54.22 PM.png',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'Screenshot 2023-12-29 at 9.54.28 PM.png',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'Screenshot 2023-12-29 at 9.54.37 PM.png',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'Screenshot 2023-12-29 at 9.56.20 PM.png',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'Screenshot 2023-12-29 at 9.56.27 PM.png',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'Screenshot 2023-12-29 at 9.57.09 PM.png',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'Screenshot 2023-12-29 at 9.57.19 PM.png',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'Screenshot 2023-12-29 at 9.59.31 PM.png',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'Showing Up Daily Graph.JPG',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'Solitude.png',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'Strategise, Don't Complain.png',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'Success is doing something obvious for a long time.png',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'You Get What You Repeat.png',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'cantino.eth community inspo.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'cantino.eth inspo 2.jpg',</span></p>
+<p class="p1"><span class="s1">];</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const randomIndex = Math.floor(Math.random() * images.length);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const imageUrl = images[randomIndex];</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// Set the background image of the body</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>document.body.style.backgroundImage = `url('${imageUrl}')`;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>});</span></p>
+<p class="p1"><span class="s1">&lt;/script&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;/body&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;/html&gt;</span></p>
 </body>
 </html>
